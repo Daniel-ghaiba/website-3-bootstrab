@@ -1,0 +1,209 @@
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   body
+{
+    height: 2000px;
+}
+.logo{
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* padding-top: 5px; */
+    width: 100px;
+
+}
+@media(max-width:567px){
+    .logo{
+        width: 80px;
+    }
+}
+
+header{
+    /* position: fixed; */
+    position: absolute;
+    z-index: 30;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+
+.section-1-pargraph{
+
+    /* background-color: rgba(0, 195, 255, 0.37); */
+    /* background-color: rgba(0, 0, 255, 0.521); */
+    /* background-color: rgb(56 56 195 / 52%); */
+    background-color: rgb(0 0 67 / 48%);
+
+    
+    border-radius: 20px;
+    color: white!important;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-butt span{
+    color: white!important;
+    /* background-color: white!important; */
+}
+.section-3{
+    background-color: rgb(158, 217, 219)!important;
+    border: none!important;
+    padding: 10px;
+    border-radius: 10px;
+}
+.section-3 h3{
+    border: none!important;
+    background-color: rgb(158, 217, 219)!important;
+}
+.carousel1{
+    /* background-color: rgb(194, 192, 192); */
+    /* padding: 10px 10px; */
+    height: 60px;
+    border-radius: 10px;
+    /* background-color: rgb(211, 211, 211); */
+}
+
+.carousel2{
+    /* background-color: black; */
+    /* padding: 10px 10px; */
+    height: 60px;
+    border-radius: 10px;
+}
+
+
+@media(min-width:992px){
+   .carousel-caption{
+    bottom: 7.25rem;
+} 
+}
+@media(max-width:567px){
+    .section-1{
+        padding-top: 80px;
+    }
+}
+/* ....................................................................... */
+.podcast_1,
+.podcast_12{
+    height: 400px;
+    background-color: #dad7d7;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px 0px gray!important;
+}
+.podcast_image{
+    /* object-fit: cover; */
+    /* position: relative; */
+    /* transition: 0.5s; */
+    /* overflow:hidden; */
+    width: 300px;
+    padding: 0;
+    flex-grow: 1;
+}
+.poscard-1{
+
+    height: 100%;
+    /* max-width: 300px; */
+    width: 100%;
+    /* border-bottom-left-radius: 20px; */
+    /* border-top-left-radius: 20px; */
+    object-fit: cover;
+    /* position: absolute; */
+    /* position: absolute; */
+    /* position: relative; */
+    transition: 0.5s;
+    transform: scale(1,1);
+
+}
+
+.podcast_body{
+    padding: 50px;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: space-between; */ 
+    /* position: relative; */
+    overflow: hidden;
+    flex-grow: 4;
+}
+.podcast_title{
+    padding-bottom: 10px;
+}
+.data_time span{
+    font-size: 15px;
+
+}
+.podcast_bar{
+    width: 50px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: blue;
+    padding:2px 0;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.postcard_tags{
+    /* padding: 30px; */
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: start;
+
+}
+.postcard_tags li{
+    /* display:inline-block; */
+    list-style-type: none;
+    /* padding-left: 10px; */
+    /* padding-left: 20px; */
+    /* margin-left: -40px; */
+    padding: 1px 8px;
+    /* border: 2px solid red; */
+    margin-left: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: 0.3s;
+
+}
+.podcast_1:hover .podcast_bar{
+    /* transform: scale(3,1); */
+    /* text-orientation: ; */
+    width: 120px;
+    transform-origin: left;
+}
+.podcast_1:hover .podcast_image img{
+    transform: scale(1.1,1.1);
+    /* transition-timing-function: ease; */
+    /* transition: 1s; */
+    /* transition-property: transform; */
+    /* object-fit:none; */
+    /* overflow: hidden; */
+}
+.postcard_tags li:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+
+} 
+@media(max-width:567px){
+    .podcast_body{
+        padding: 20px;
+
+    }
+
+}
+@media(max-width:768px){
+    .podcast_body{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+

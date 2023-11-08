@@ -1,11 +1,12 @@
-   *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   }
-   body
+}
+body
 {
     height: 2000px;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 .logo{
     /* padding: 10px; */
@@ -27,6 +28,7 @@ header{
     /* background-color: rgba(255, 255, 255, 0.671); */
     background-color: rgba(255, 255, 255, 0.692);
     /* background-color: white; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -36,12 +38,14 @@ header{
     /* background-color: rgba(0, 0, 255, 0.521); */
     /* background-color: rgb(56 56 195 / 52%); */
     background-color: rgb(0 0 67 / 48%);
+    /* font-family: 'Montserrat', sans-serif; */
 
     
     border-radius: 20px;
     color: white!important;
     /* font-family:'Times New Roman', Times, serif; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 .section-butt span{
     color: white!important;
@@ -144,7 +148,7 @@ header{
     position: relative;
     margin-bottom: 50px;
     overflow: hidden;
-    box-shadow: 10px 10px 30px -10px gray!important;
+    /* box-shadow: 10px 10px 30px -10px gray!important; */
 }
 .podcast_image{
     /* object-fit: cover; */
@@ -191,7 +195,8 @@ header{
     width: 50px;
     height: 4px;
     border-radius: 20px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: navy;
     padding:2px 0;
     margin: 10px 0;
     transition: 0.5s;
@@ -212,7 +217,7 @@ header{
     padding: 1px 8px;
     /* border: 2px solid red; */
     margin-left: 20px;
-    background-color: gray;
+    background-color: rgb(179, 174, 174);
     border-radius: 5px;
     margin-top: 50px;
     transition: 0.3s;
@@ -236,7 +241,45 @@ header{
     transform: scale(1.1,1.1);
     cursor: pointer;
 
-} 
+}
+@media(max-width:992px){
+    .podcast_body{
+        padding: 30px;
+        padding-top: 20px;
+    }
+    .postcard_tags{
+        padding-left: 0px!important;
+        /* visibility: hidden; */
+        margin-top: 0px;
+        flex-wrap: wrap;
+        margin-bottom: 0px!important;
+
+    }
+    .postcard_tags li{
+        /* width: 120px; */
+        /* font-size: 11px; */
+        margin-top: 0px!important;
+        /* flex-wrap: wrap; */
+        margin-bottom: 5px;
+    }
+
+}
+ @media(max-width:768px){
+    .podcast_body{
+        padding: 30px;
+        /* padding-top: 40px; */
+    }
+    .podcast_1{
+        height: 400px;
+    }
+    .postcard_tags{
+        padding-left: 0px!important;
+        /* visibility: hidden; */
+
+    }
+  
+    
+}
 @media(max-width:567px){
     .podcast_body{
         padding: 20px;
@@ -245,14 +288,7 @@ header{
     
 
 }
-@media(max-width:768px){
-    .podcast_body{
-        padding: 20px;
-    }
-    .podcast_1{
-        height: 400px;
-    }
-}
+
 /* .............................................................................................................................. */
 
 .back-1-cover{
@@ -284,11 +320,17 @@ header{
 .card_2{
     width: 350px!important;
     border-radius: 10px;
+    background-color: #eee;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
 }
 .card_2 img{
     /* flex-grow: 3; */
     object-fit: cover;
     height: 300px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .card-body {
     flex-direction: column;  
